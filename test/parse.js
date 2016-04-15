@@ -254,6 +254,19 @@ var tests = {
       done ();
     });
   },
+  "variables, no dollar": function (done){
+    var options = { variables: true, dollar: false };
+
+    properties.parse ("a=1\nb={a}", options, function (error, p){
+      assert.ifError (error);
+
+      assert.deepEqual (p, {
+        a: 1,
+        b: 1
+      });
+      done ();
+    });
+  },
   "variables, no recursion": function (done){
     var options = { variables: true };
     
