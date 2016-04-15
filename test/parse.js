@@ -472,8 +472,13 @@ var tests = {
     };
     
     properties.parse ("a=1\na.b=2", options, function (error, p){
-      assert.ok (error);
-      
+      // assert.ok (error);
+      assert.deepEqual (p, {
+        a: {
+          _: 1,
+          b: 2
+        }
+      });
       done ();
     });
   },
