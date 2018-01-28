@@ -2,7 +2,13 @@
   "name": "nprops",
   "version": "2.0.0",
   "description": ".properties parser/stringifier",
-  "keywords": ["properties", "ini", "parser", "stringifier", "config"],
+  "keywords": [
+    "properties",
+    "ini",
+    "parser",
+    "stringifier",
+    "config"
+  ],
   "author": "Gabriel Llamas <gagle@outlook.com>",
   "repository": "git://github.com/gagle/node-properties.git",
   "engines": {
@@ -14,7 +20,7 @@
   "devDependencies": {
     "ini": "1.3.x",
     "speedy": "*",
-    "js-yaml": "3.5.x"
+    "js-yaml": "3.10.x"
   },
   "scripts": {
     "test": "node test/parse && node test/stringify"
