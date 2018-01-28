@@ -14,9 +14,6 @@
   "engines": {
     "node": ">=0.10"
   },
-  "publishConfig": {
-    "registry": "http://registry.npmjs.com"
-  },
   "devDependencies": {
     "ini": "1.3.x",
     "speedy": "*",
